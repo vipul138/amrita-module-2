@@ -1,0 +1,57 @@
+/* Base styles for mobile view (default) */
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+div {
+    display: inline-block;
+    width: 100%; /* Full width for mobile */
+    margin: 5px;
+    padding: 2px;
+}
+
+/* Tablet view: 772px and above */
+@media (min-width: 772px) {
+    div {
+        width: 45%; /* 45% width for each div */
+    }
+    div img {
+        height: 30vh; /* Image height is 30% of viewport height */
+    }
+}
+
+/* Large screen view: 998px and above */
+@media (min-width: 998px) {
+    div {
+        width: 30%; /* 30% width for each div */
+    }
+}
